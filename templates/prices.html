@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container routes">
+        <table>
+            <tr>
+                <th>Пункт відправлення</th>
+                <th>Пункт прибуття</th>
+                <th>Час відправлення</th>
+                <th>Час прибуття</th>
+                <th>Вартість</th>
+            </tr>
+            {% for price in prices %}
+            <tr>
+                <td>{{ price.departure_station }}</td>
+                <td>{{ price.destination }}</td>
+                <td>{{ price.departure_time }}</td>
+                <td>{{ price.arrival_time }}</td>
+                <td>{{ price.price }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock content %}

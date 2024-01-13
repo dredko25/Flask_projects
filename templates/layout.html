@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="utf-8">
+  <title>Автостанція "Промінь"</title>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="menu-block container">
+        <a href="/" id="logo">
+          <div>Промінь</div>
+          <div>Районна автостанція</div>
+        </a>
+        <ul id="menu">
+          <li><a href="/">Головна</a></li>
+          <li><a href="/routes">Маршрути</a></li>
+          <li><a href="/prices">Вартість</a></li>
+          <li><a href="/contacts">Контакти</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      {% block content %} {% endblock %}
+    </main>
+    <footer>
+      <div class="container">Гаряча лінія: +380 44 321 54 76 (цілодобово)</div>
+      <div class="container">&copy; 2023 Всі права захищенні</div>
+    </footer>
+  </div>
+</body>
+
+</html>

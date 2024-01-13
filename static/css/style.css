@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    font-size: 24px;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+    background: url(../img/bus.png) no-repeat;
+    background-size: 100%;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    color: inherit;
+    font-family: 'Comfortaa', cursive;
+    color: #ffffff;
+}
+
+header,
+footer {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+#logo {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+
+#logo div:nth-child(1) {
+    margin-left: 40px;
+}
+
+.menu-block {
+    align-items: center;
+}
+
+#logo div:nth-child(2) {
+    font-size: 16px;
+}
+
+#menu {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu li {
+    margin: 0px 20px;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.main h1 {
+    text-align: center;
+}
+
+.main p {
+    text-shadow: 1px 2px #000000;
+    margin-top: 50px;
+    padding: 30px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.routes {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.routes table {
+    width: 100%;
+    color: #000000;
+    line-height: 2;
+    border: 1px solid black;
+}
+
+.routes th {
+    font-weight: bolder;
+    border: 1px solid black;
+}
+
+.routes td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contacts div {
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    color: #000000;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.contacts h1 {
+    font-size: 32px;
+}
+
+.contacts div:nth-child(2) {
+    width: 45%;
+}
+.contacts div:nth-child(3) {
+    width: 45%;
+    margin-left: 10%;
+}
+
+
+footer {
+    text-align: center;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container routes">
+        <table>
+            <tr>
+                <th>Пункт відправлення</th>
+                <th>Пункт прибуття</th>
+                <th>Частота відправлень</th>
+                <th>Перевізник</th>
+                <th>Час відправлення</th>
+                <th>Час прибуття</th>
+            </tr>
+            {% for route in routes %}
+            <tr>
+                <td>{{ route.departure_station }}</td>
+                <td>{{ route.destination }}</td>
+                <td>{{ route.departure_frequency }}</td>
+                <td>{{ route.carrier }}</td>
+                <td>{{ route.departure_time }}</td>
+                <td>{{ route.arrival_time }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock content %}
