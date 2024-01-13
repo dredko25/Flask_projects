@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <h1 class="container costs">Вартість навчання:</h1>
+    <div class="container costs">
+        <table>
+            <thead>
+                <tr>
+                    <th>Назва спеціальності</th>
+                    <th>Вартість за рік</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cost in costs %}
+                <tr>
+                    <td>
+                        <h3>{{ cost.name }}</h3>
+                    </td>
+                    <td class="center">
+                        <p>{{ cost.cost }}</p>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}

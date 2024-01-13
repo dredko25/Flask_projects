@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <h1 class="container courses">Наші спеціальності:</h1>
+    <div class="container courses">
+        <ul>
+            {% for course in courses %}
+            <li>
+                <h2>{{ course.name }}</h2>
+                <p>{{ course.desc }}</p>
+                <h3>Дисципліни:</h3>
+                {% for discipline in course.disciplines %}
+                    <p><b>{{ discipline.name}}</b> викладає {{ discipline.teacher }}</p>
+                {% endfor%}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}
